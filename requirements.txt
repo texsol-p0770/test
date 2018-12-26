@@ -1,0 +1,6 @@
+virtualenv
+bottle
+websocket-server
+websocket
+websocket-client
+thread
