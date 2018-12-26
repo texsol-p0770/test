@@ -1,3 +1,5 @@
+gevent
+gevent-websocket
 virtualenv
 bottle
 websocket-server
