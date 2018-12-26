@@ -1,4 +1,3 @@
 virtualenv
 websocket-server
-websocket
 websocket-client
