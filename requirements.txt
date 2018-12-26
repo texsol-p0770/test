@@ -1,7 +1,4 @@
-gevent
-gevent-websocket
 virtualenv
-bottle
 websocket-server
 websocket
 websocket-client
