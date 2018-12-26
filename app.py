@@ -20,7 +20,7 @@ def message_received(client, server, message):
 	print(json.dumps(hash))
 
 if __name__ == "__main__":
-	server = WebsocketServer(1064, host="pt-wrap-node15-vmg.wni.co.jp")
+	server = WebsocketServer(8080, host="wsstest-sky-sandbox.pt-wrap-ea.wni.com")
 	server.set_fn_new_client(new_client)
 	server.set_fn_client_left(client_left)
 	server.set_fn_message_received(message_received)
