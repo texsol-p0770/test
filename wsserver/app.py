@@ -4,20 +4,23 @@ import json
 import time
 
 def new_client(client, server):
-	hash = {"message": "new_client:[" + client["address"][0] + ":" + str(client["address"][1]) + "]"}
+#	hash = {"message": "new_client:[" + client["address"][0] + ":" + str(client["address"][1]) + "]"}
 #	server.send_message_to_all(json.dumps(hash))
-	print(json.dumps(hash))
+#	print(json.dumps(hash))
+	print("@@@ new_client @@@")
 
 def client_left(client, server):
-	hash = {"message": "client_left:[" + client["address"][0] + ":" + str(client["address"][1]) + "]"}
+#	hash = {"message": "client_left:[" + client["address"][0] + ":" + str(client["address"][1]) + "]"}
 #	server.send_message_to_all(json.dumps(hash))
-	print(json.dumps(hash))
+#	print(json.dumps(hash))
+	print("@@@ client_left @@@")
 
 def message_received(client, server, message):
-	hash = {"message": message}
+#	hash = {"message": message}
 #	server.send_message(client, json.dumps(hash))
-	server.send_message_to_all(json.dumps(hash))
-	print(json.dumps(hash))
+#	server.send_message_to_all(json.dumps(hash))
+#	print(json.dumps(hash))
+	print("@@@ message_received @@@")
 
 if __name__ == "__main__":
 	server = WebsocketServer(8080, host="0.0.0.0")
